@@ -1,0 +1,93 @@
+.soft-border {
+  background-color: lightgreen;
+    border: 10px solid green;
+    margin: 40px;
+    padding: 30px;
+  }
+  .border {
+    border: 5px dotted green;
+    background-color: rgb(255, 248, 185);
+    margin: 20px;
+    padding: 10px;  
+  }
+  .center-title {
+    color: red;
+    margin: 0 auto;
+    width: auto;
+    }
+
+  .black-border {
+    border: 5px solid darkred;
+    padding: 5px;
+ }
+  
+  h1, h2, h3, div {text-align: center}
+ 
+  h1 {
+   font-family: "Tangerine", serif;
+  font-size: 40px;
+  }
+
+.portfolio img {
+    max-width: 100%;
+    width: 100%;
+    height: auto !important;
+  }
+ 
+.button {
+    width: 200px;
+    height: 60px;
+    display: block;
+    background-color: rgb(65, 0, 82);
+    margin:10px auto;
+    color: white;
+    text-align: center;
+    line-height: 60px;}
+  
+  .button:hover {
+      background-color: darksalmon;
+    }
+
+  .container {
+      border: 50px solid lightsalmon;
+      padding: 10px;
+      font-size: 2em;
+      text-align: center;
+      justify-content: space-around;
+      display: flex;
+    }
+
+  .parent {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px 500px 200px;
+      height: 1000px;
+      grid-template-areas:
+      "header header"
+      "main aside";
+  }
+  header {
+    grid-area: header;
+  }
+  main {
+    grid-area: main;
+  }
+  aside {
+    grid-area: aside;
+  }
+        
+
+  @media (max-width: 600px){
+    .soft-border {background-color: gold;
+         color:darkblue;
+         font-size: 15px;
+         line-height: 40px;
+         }
+    .portfolio img {
+        max-width: 5%;
+        max-height: 5%;
+        }
+              
+    }
+         
+   
